@@ -7,5 +7,18 @@
 
 import Foundation
 
+
+func rectangleArea(_ base: Int,_ height: Int) -> Int {
+    return base*height
+}
+
+
 print("Hello, Louis!")
 
+let q = "How are you today"
+let message  = "\(q)?"
+
+print(message)
+
+
+print(rectangleArea(2,4))
