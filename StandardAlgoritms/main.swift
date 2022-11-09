@@ -22,3 +22,11 @@ print(message)
 
 
 print(rectangleArea(2,4))
+
+
+class MarioKartVehicle {
+    let kartColour = String()
+    let acceleration = Double()
+    let topSpeed = Double()
+    
+}
