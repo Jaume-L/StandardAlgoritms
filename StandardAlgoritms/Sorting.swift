@@ -8,7 +8,7 @@
 import Foundation
 
 class Sorting {
-    func bubbleSort(data: [Int]) -> [Int] {
+    func bubbleSort(_ data: [Int]) -> [Int] {
         var array = data
         var swapped = true
         
@@ -24,6 +24,23 @@ class Sorting {
                     
                 }
             }
+        }
+        return array
+    }
+    
+    func insertionSort(_ data: [Int]) -> [Int] {
+        var array = data
+        for i in 1..<data.count {
+            let temp = array[i]
+            var j = i - 1
+            
+            while j >= 0 && array[j] > temp {
+                array[j + 1] = array[j]
+                j = j - 1
+                
+            }
+            array[j + 1] = temp
+            
         }
         return array
     }
