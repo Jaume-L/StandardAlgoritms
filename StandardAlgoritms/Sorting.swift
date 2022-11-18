@@ -13,6 +13,7 @@ class Sorting {
         var swapped = true
         
         while swapped {
+            swapped = false
             
             for i in 0..<array.count - 1 {
                 
@@ -27,7 +28,7 @@ class Sorting {
         }
         return array
     }
-    
+
     func insertionSort(_ data: [Int]) -> [Int] {
         var array = data
         for i in 1..<data.count {
@@ -107,7 +108,7 @@ class Sorting {
       return isFound
     }
     
-    func binarySearch(_ data: [Int], _ searchTerm: Int) -> Bool {
+    func binarySearch(_ searchTerm: Int, _ data: [Int]) -> Bool {
       var array = data
       var isFound = false
       var searching = true
