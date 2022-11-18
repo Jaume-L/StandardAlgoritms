@@ -15,7 +15,7 @@ class SortingTest: XCTestCase {
         let expected = [1, 3, 4, 10, 15]
         let sorting = Sorting()
         //act - perform the action we want to test
-        let sortedArray = sorting.bubbleSort(data: unsortedArray)
+        let sortedArray = sorting.bubbleSort(unsortedArray)
         //assert - check the action behaved as we expected
         XCTAssertEqual(sortedArray, expected)
     }
