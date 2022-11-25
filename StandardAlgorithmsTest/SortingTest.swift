@@ -42,27 +42,14 @@ class SortingTest: XCTestCase {
         XCTAssertEqual(sortedArray, expected)
     }
     
-    func testLinearSearchWithArrayOfIntegersReturnsTrue() {
+    func testQuickSortWithUnsortedArrayOfIntegersReturnsSortedArray() {
         //arrange - test set-up
-        let array = [3, 1, 10, 15, 4]
-        let searchTerm = 10
-        let expected = true
+        let unsortedArray = [3, 1, 10, 15, 4]
+        let expected = [1, 3, 4, 10, 15]
         let sorting = Sorting()
         //act - perform the action we want to test
-        let foundTerm = sorting.linearSearch(searchTerm, array)
+        let sortedArray = sorting.quickSort(unsortedArray)
         //assert - check the action behaved as we expected
-        XCTAssertEqual(foundTerm, expected)
-    }
-    
-    func testBinarySearchWithSortedArrayOfIntegersReturnsTrue() {
-        //arrange - test set-up
-        let array = [1, 3, 4, 10, 15]
-        let searchTerm = 10
-        let expected = true
-        let sorting = Sorting()
-        //act - perform the action we want to test
-        let foundTerm = sorting.binarySearch(searchTerm, array)
-        //assert - check the action behaved as we expected
-        XCTAssertEqual(foundTerm, expected)
+        XCTAssertEqual(sortedArray, expected)
     }
 }
